@@ -1,0 +1,1 @@
+// Blank service worker to resolve 404 errors from previous project registrations
