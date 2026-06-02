@@ -17,7 +17,7 @@ export function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-graduation.jpg"
+          src="/images/hero-graduation.png"
           alt="IPSM Safety Training Graduation"
           fill
           className="object-cover scale-105 animate-[scale-in_1.2s_ease-out_forwards]"
