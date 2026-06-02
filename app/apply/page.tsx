@@ -68,7 +68,20 @@ function ApplyFormContent() {
   }, [searchParams]);
 
   if (!mounted) {
-    return <div className="p-20 text-center text-muted-foreground italic">Loading application form...</div>;
+    return (
+      <div className="flex min-h-[60vh] items-center justify-center p-20">
+        <div className="text-center space-y-4">
+          <div className="relative h-12 w-12 mx-auto">
+            <div className="absolute inset-0 border-4 border-primary/20 rounded-full" />
+            <div className="absolute inset-0 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+          </div>
+          <div className="space-y-2">
+            <p className="text-xl font-heading font-bold text-primary animate-pulse">Initializing Portal</p>
+            <p className="text-muted-foreground text-sm italic">Loading professional application standards...</p>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   const handleSubmit = (e: React.FormEvent) => {
